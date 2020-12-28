@@ -1,4 +1,8 @@
-const io = require("socket.io")(3000);
+const io = require("socket.io")(3000, {
+    cors: {
+      origin: "http://https://backofzoom.vercel.app/",
+    },
+  });
 
 const users = {}
 
