@@ -1,6 +1,6 @@
 const io = require("socket.io")(3000, {
     cors: {
-      origin: "http://backofzoom.vercel.app/",
+      origin: "http://backofzoom.vercel.app/*",
     },
   });
 
